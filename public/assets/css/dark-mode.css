@@ -1,0 +1,958 @@
+/* ===========================
+   DARK MODE — Facebook Style
+   Neutral dark grays, clean
+   =========================== */
+
+/* === BASE === */
+body.dark-mode {
+    background: #18191a !important;
+    color: #e4e6eb !important;
+}
+
+/* === HEADER === */
+body.dark-mode header {
+    background: #242526 !important;
+    border-bottom-color: #3a3b3c !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .header-shape {
+    background: #00ACB1 !important;
+}
+
+body.dark-mode .user-info {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .user-info i:first-child {
+    color: #00ACB1 !important;
+}
+
+/* === NAVIGATION === */
+body.dark-mode nav {
+    background: transparent !important;
+}
+
+body.dark-mode nav a {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode nav a::before {
+    background: #00ACB1 !important;
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode nav a.active {
+    color: #fff !important;
+    box-shadow: 0 8px 18px rgba(0, 172, 177, 0.45) !important;
+}
+
+/* === CONTROLS === */
+body.dark-mode .controls {
+    background: transparent !important;
+}
+
+body.dark-mode .search-box {
+    background: #3a3b3c !important;
+    border-color: #3a3b3c !important;
+}
+
+body.dark-mode .search-box input {
+    color: #e4e6eb !important;
+    background: transparent !important;
+}
+
+body.dark-mode .search-box input::placeholder {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode .search-icon {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode .filter-select {
+    background-color: #3a3b3c !important;
+    border-color: #3a3b3c !important;
+    color: #e4e6eb !important;
+}
+
+/* === TABLES === */
+body.dark-mode table {
+    background: #242526 !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.dark-mode thead {
+    background: #2d2e2f !important;
+}
+
+body.dark-mode thead th {
+    color: #e4e6eb !important;
+    background: #2d2e2f !important;
+}
+
+body.dark-mode tbody td {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode tbody tr:not(:last-child) {
+    border-bottom-color: #3a3b3c !important;
+}
+
+body.dark-mode tbody tr:hover {
+    background: #303031 !important;
+}
+
+body.dark-mode .table-container {
+    background: transparent !important;
+}
+
+/* === MODALS === */
+body.dark-mode .modal-overlay {
+    background: rgba(0, 0, 0, 0.65) !important;
+}
+
+body.dark-mode .modal-card,
+body.dark-mode #editStudentForm {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .modal-card h2 {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .close-btn {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode .modal-form label {
+    color: #b0b3b8 !important;
+}
+
+/* === FORM INPUTS === */
+body.dark-mode input[type="text"],
+body.dark-mode input[type="date"],
+body.dark-mode input[type="time"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="password"],
+body.dark-mode input[type="number"],
+body.dark-mode input[type="search"],
+body.dark-mode input[type="tel"],
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #3a3b3c !important;
+    border-color: #4e4f50 !important;
+    color: #e4e6eb !important;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #b0b3b8 !important;
+}
+
+/* === DROPDOWNS === */
+body.dark-mode .dropdown-menu {
+    background: #242526 !important;
+    border-color: #3a3b3c !important;
+}
+
+body.dark-mode .dropdown-menu a {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .dropdown-menu a:hover {
+    background: #3a3b3c !important;
+}
+
+body.dark-mode .dropdown-menu hr {
+    border-top-color: #3a3b3c !important;
+}
+
+body.dark-mode .dropdown-content {
+    background: #242526 !important;
+    border-color: #3a3b3c !important;
+}
+
+body.dark-mode .dropdown-content a {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .dropdown-content a:hover {
+    background: #3a3b3c !important;
+}
+
+/* === NOTIFICATION === */
+body.dark-mode .notification-dropdown {
+    background: #242526 !important;
+    border-color: #3a3b3c !important;
+}
+
+body.dark-mode .notification-header {
+    background: #2d2e2f !important;
+}
+
+body.dark-mode .notification-item {
+    color: #e4e6eb !important;
+    border-bottom-color: #3a3b3c !important;
+}
+
+body.dark-mode .notification-item:hover {
+    background: #3a3b3c !important;
+}
+
+/* === ACTION BUTTONS === */
+body.dark-mode .actions .view {
+    background: rgba(0, 172, 177, 0.15) !important;
+    color: #00ACB1 !important;
+}
+
+body.dark-mode .actions .edit {
+    background: rgba(251, 191, 36, 0.15) !important;
+    color: #fbbf24 !important;
+}
+
+body.dark-mode .actions .archive {
+    background: rgba(239, 68, 68, 0.15) !important;
+    color: #ef4444 !important;
+}
+
+/* === RECORD CARDS === */
+body.dark-mode .record-card {
+    background: linear-gradient(180deg, #2d2e2f 0%, #3a3b3c 100%) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25) !important;
+}
+
+body.dark-mode .modal-card.view-modal {
+    background: #242526 !important;
+}
+
+/* === BUTTONS === */
+body.dark-mode .btn-secondary {
+    background: #3a3b3c !important;
+    color: #e4e6eb !important;
+    border-color: #4e4f50 !important;
+}
+
+body.dark-mode .btn {
+    color: #fff !important;
+}
+
+/* === PAGINATION === */
+body.dark-mode .pagination span,
+body.dark-mode .pagination a {
+    color: #e4e6eb !important;
+}
+
+/* ===========================
+   DASHBOARD CLASSES
+   =========================== */
+
+body.dark-mode .st {
+    background: #242526 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+    border-left-color: #00ACB1 !important;
+}
+
+body.dark-mode .st .sv {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .st .sl {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode .cb,
+body.dark-mode .chart-box,
+body.dark-mode .chart-box2 {
+    background: #242526 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.dark-mode .cb h3,
+body.dark-mode .chart-box h3,
+body.dark-mode .chart-box2 h3 {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .summary-box {
+    background: #242526 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .summary-box h3 {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .sec-div {
+    border-bottom-color: #3a3b3c !important;
+}
+
+body.dark-mode .sec-div h3 {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .atag {
+    background: #3a3b3c !important;
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .nutri-mini {
+    background: #242526 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.dark-mode .nutri-mini .nl {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode .status-card,
+body.dark-mode .stat-card {
+    background: #242526 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.dark-mode .status-card .s-label {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode .date-section {
+    background: #242526 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.dark-mode .date-section h4 {
+    color: #e4e6eb !important;
+    border-bottom-color: #3a3b3c !important;
+}
+
+body.dark-mode .ailment-rank {
+    background: #3a3b3c !important;
+}
+
+body.dark-mode .ailment-rank:hover {
+    background: #4e4f50 !important;
+}
+
+body.dark-mode .ailment-rank .rank-name {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .complaint-tag {
+    background: #3a3b3c !important;
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .alert-box {
+    background: #3a3b3c !important;
+    border-left-color: #f39c12 !important;
+    color: #e4e6eb !important;
+}
+
+/* Filter Buttons */
+body.dark-mode .filter-bar a,
+body.dark-mode .yr-f a,
+body.dark-mode .year-filter a,
+body.dark-mode .grade-filter a {
+    border-color: #4e4f50 !important;
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .filter-bar a.active,
+body.dark-mode .yr-f a.active,
+body.dark-mode .year-filter a.active,
+body.dark-mode .grade-filter a.active,
+body.dark-mode .filter-bar a:hover,
+body.dark-mode .yr-f a:hover,
+body.dark-mode .year-filter a:hover,
+body.dark-mode .grade-filter a:hover {
+    background: #00ACB1 !important;
+    color: #fff !important;
+    border-color: #00ACB1 !important;
+}
+
+body.dark-mode .custom-form input[type="date"] {
+    background: #3a3b3c !important;
+    border-color: #4e4f50 !important;
+    color: #e4e6eb !important;
+}
+
+/* === HEADINGS === */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode p {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode a {
+    color: #00ACB1;
+}
+
+/* === NUTRITIONAL TABLE === */
+body.dark-mode .nutri-table {
+    background: #242526 !important;
+}
+
+body.dark-mode .nutri-table thead th {
+    background: #2d2e2f !important;
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .nutri-table tbody td {
+    border-bottom-color: #3a3b3c !important;
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .nutri-table tbody tr:hover {
+    background: #303031 !important;
+}
+
+/* === SWEETALERT === */
+body.dark-mode .swal2-popup {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .swal2-title {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .swal2-html-container {
+    color: #b0b3b8 !important;
+}
+
+/* === SCROLLBAR === */
+body.dark-mode::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background: #18191a;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: #3a3b3c;
+    border-radius: 4px;
+}
+
+body.dark-mode *::-webkit-scrollbar {
+    width: 6px;
+}
+
+body.dark-mode *::-webkit-scrollbar-track {
+    background: #242526;
+}
+
+body.dark-mode *::-webkit-scrollbar-thumb {
+    background: #3a3b3c;
+    border-radius: 3px;
+}
+
+/* === DARK MODE TOGGLE === */
+.dark-mode-toggle {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.dark-mode-toggle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode-toggle i {
+    font-size: 1.2rem;
+    color: #606770;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-toggle:hover i {
+    color: #00ACB1;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background: #3a3b3c !important;
+}
+
+body.dark-mode .dark-mode-toggle i {
+    color: #e4e6eb !important;
+}
+
+/* ===========================
+   CATCH-ALL: Inline-styled pages
+   Override white backgrounds,
+   dark text, and light borders
+   used across all PHP pages
+   =========================== */
+
+/* Panels, cards, containers with inline background: white / #fff */
+body.dark-mode .panel,
+body.dark-mode .form,
+body.dark-mode .panel.form,
+body.dark-mode [style*="background: white"],
+body.dark-mode [style*="background:#fff"],
+body.dark-mode [style*="background: #fff"],
+body.dark-mode [style*="background: #ffffff"],
+body.dark-mode [style*="background-color: white"],
+body.dark-mode [style*="background-color: #fff"],
+body.dark-mode [style*="background-color:#fff"] {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Light gray backgrounds (upload areas, sub-sections) */
+body.dark-mode [style*="background: #f8f9fa"],
+body.dark-mode [style*="background: #f5f7fa"],
+body.dark-mode [style*="background:#f8f9fa"],
+body.dark-mode [style*="background: #f1f1f1"],
+body.dark-mode [style*="background: #f0f0f0"],
+body.dark-mode [style*="background-color: #f8f9fa"] {
+    background: #3a3b3c !important;
+    color: #e4e6eb !important;
+}
+
+/* Success / Error alert boxes */
+body.dark-mode [style*="background: #d4edda"] {
+    background: #2d3c2d !important;
+    color: #a3d9a5 !important;
+}
+
+body.dark-mode [style*="background: #fee"],
+body.dark-mode [style*="background: #ffebee"] {
+    background: #3c2d2d !important;
+    color: #f5a5a5 !important;
+}
+
+/* All dark-colored inline text */
+body.dark-mode [style*="color: #333"],
+body.dark-mode [style*="color:#333"],
+body.dark-mode [style*="color: #555"],
+body.dark-mode [style*="color:#555"] {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode [style*="color: #666"],
+body.dark-mode [style*="color:#666"],
+body.dark-mode [style*="color: #777"],
+body.dark-mode [style*="color:#777"],
+body.dark-mode [style*="color: #888"],
+body.dark-mode [style*="color:#888"],
+body.dark-mode [style*="color: #999"],
+body.dark-mode [style*="color:#999"] {
+    color: #b0b3b8 !important;
+}
+
+/* Inline borders */
+body.dark-mode [style*="border-bottom: 2px solid"] {
+    border-bottom-color: inherit !important;
+}
+
+body.dark-mode [style*="border: 1px solid #ddd"],
+body.dark-mode [style*="border: 1px solid #eee"],
+body.dark-mode [style*="border: 1px solid #ccc"] {
+    border-color: #4e4f50 !important;
+}
+
+body.dark-mode [style*="border-bottom: 1px solid #eee"],
+body.dark-mode [style*="border-bottom: 1px solid #ddd"] {
+    border-bottom-color: #3a3b3c !important;
+}
+
+/* File inputs */
+body.dark-mode input[type="file"] {
+    background: #3a3b3c !important;
+    border-color: #4e4f50 !important;
+    color: #e4e6eb !important;
+}
+
+/* Small / helper text */
+body.dark-mode small {
+    color: #b0b3b8 !important;
+}
+
+/* All labels */
+body.dark-mode label {
+    color: #e4e6eb !important;
+}
+
+/* Links inside panels */
+body.dark-mode .panel a,
+body.dark-mode .form a {
+    color: #e4e6eb !important;
+}
+
+/* Form containers (.container-fluid, general containers) */
+body.dark-mode .container-fluid,
+body.dark-mode .container {
+    background: transparent !important;
+}
+
+/* Profile page */
+body.dark-mode .profile-card,
+body.dark-mode .profile-container {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+}
+
+/* Edit pages */
+body.dark-mode .edit-container,
+body.dark-mode .card-container,
+body.dark-mode .form-container,
+body.dark-mode .consent-container {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+}
+
+/* View pages (view_card, view_treatment, view_consent) */
+body.dark-mode .card-wrapper,
+body.dark-mode .treatment-wrapper,
+body.dark-mode .consent-wrapper,
+body.dark-mode .print-area,
+body.dark-mode .card-layout {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+}
+
+/* Census / Reports */
+body.dark-mode .report-container,
+body.dark-mode .census-container,
+body.dark-mode .archive-container {
+    background: transparent !important;
+    color: #e4e6eb !important;
+}
+
+/* Backup page */
+body.dark-mode .backup-container,
+body.dark-mode .backup-section {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+}
+
+/* Logs page */
+body.dark-mode .log-entry {
+    background: #242526 !important;
+    border-color: #3a3b3c !important;
+    color: #e4e6eb !important;
+}
+
+/* User management */
+body.dark-mode .user-card {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+}
+
+/* PE Monitoring */
+body.dark-mode .monitoring-container {
+    background: transparent !important;
+    color: #e4e6eb !important;
+}
+
+/* Change password page */
+body.dark-mode .password-container,
+body.dark-mode .change-password-container {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+}
+
+/* Tab backgrounds (thead with inline teal) */
+body.dark-mode tr[style*="background: #00ACB1"],
+body.dark-mode tr[style*="background-color: #00ACB1"],
+body.dark-mode [style*="background: #00ACB1"] th {
+    background: #2d2e2f !important;
+    color: #e4e6eb !important;
+}
+
+/* Generic div containers */
+body.dark-mode div[style*="background: white"],
+body.dark-mode div[style*="background: #fff"],
+body.dark-mode div[style*="background:#fff"],
+body.dark-mode div[style*="background-color: white"],
+body.dark-mode div[style*="background-color: #fff"] {
+    background: #242526 !important;
+    color: #e4e6eb !important;
+}
+
+/* Horizontal rules */
+body.dark-mode hr {
+    border-color: #3a3b3c !important;
+}
+
+/* Fieldsets and legends */
+body.dark-mode fieldset {
+    border-color: #3a3b3c !important;
+}
+
+body.dark-mode legend {
+    color: #e4e6eb !important;
+}
+
+/* Signature pad */
+body.dark-mode canvas {
+    border-color: #4e4f50 !important;
+}
+
+/* Badge and chip elements */
+body.dark-mode .badge,
+body.dark-mode .chip {
+    color: #e4e6eb !important;
+}
+
+/* === TRANSITIONS === */
+body,
+header,
+nav,
+table,
+thead,
+tbody,
+td,
+th,
+.table-container,
+.modal-card,
+.controls,
+.search-box,
+.filter-select,
+.dropdown-menu,
+.dropdown-content,
+.st,
+.cb,
+.atag,
+.nutri-mini,
+.status-card,
+.stat-card,
+input,
+select,
+textarea {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===========================
+   BACKUP & RECOVERY PAGE
+   =========================== */
+body.dark-mode .backup-card {
+    background: #242526 !important;
+    border-color: #3a3b3c !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25) !important;
+}
+
+body.dark-mode .backup-card:hover {
+    box-shadow: 0 30px 60px rgba(0, 172, 177, 0.15) !important;
+}
+
+body.dark-mode .backup-card.danger:hover {
+    box-shadow: 0 30px 60px rgba(255, 92, 92, 0.15) !important;
+}
+
+body.dark-mode .backup-card h3 {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .backup-card p {
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode .card-content {
+    color: #e4e6eb !important;
+}
+
+/* Backup header (inline-styled) */
+body.dark-mode .backup-header h1,
+body.dark-mode .backup-header [style*="color: #333"] {
+    color: #e4e6eb !important;
+}
+
+body.dark-mode .backup-header p,
+body.dark-mode .backup-header [style*="color: #666"] {
+    color: #b0b3b8 !important;
+}
+
+/* File upload label */
+body.dark-mode .file-label {
+    background: #3a3b3c !important;
+    border-color: #4e4f50 !important;
+    color: #b0b3b8 !important;
+}
+
+body.dark-mode .file-label:hover {
+    background: #4e4f50 !important;
+    border-color: #606162 !important;
+    color: #e4e6eb !important;
+}
+
+/* ===========================
+   FORCE EXACT LIGHT MODE ON PRINT
+   =========================== */
+@media print {
+
+    /* UNIVERSAL RESET: Every print must be Light Mode */
+    body,
+    body.dark-mode {
+        background: #fff !important;
+        color: #000 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        /* Forced Light Mode Variables for Print */
+        --bg-7: #dcedc8 !important;
+        --bg-8: #ffcdd2 !important;
+        --bg-9: #bbdefb !important;
+        --bg-10: #fff9c4 !important;
+        --bg-11: #e1bee7 !important;
+        --bg-12: #f8bbd0 !important;
+        --bg-staff: #e0e0e0 !important;
+        --bg-others: #f5f5f5 !important;
+        --bg-header-row: #00ACB1 !important;
+        --text-header-row: #fff !important;
+        --text-primary: #000 !important;
+        --border-color: #333 !important;
+    }
+
+    /* Force visibility of branded backgrounds */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Reset all text to high-contrast black */
+    p,
+    span,
+    a,
+    div,
+    td,
+    th,
+    li,
+    label,
+    strong,
+    em,
+    small,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: inherit;
+        /* Allow parent or specific overrides like teal/white */
+        text-shadow: none !important;
+    }
+
+    /* Force black text for standard data, but allow white for teal backgrounds */
+    body.dark-mode td,
+    body.dark-mode p,
+    body.dark-mode span {
+        color: #000 !important;
+    }
+
+    /* Professional Grid Lines */
+    table,
+    th,
+    td {
+        border-color: #333 !important;
+    }
+
+    /* Force Table Header to standard Teal Gradient */
+    thead,
+    .thead-teal,
+    [style*="background: var(--bg-header-row)"] {
+        background: #00ACB1 !important;
+        background: linear-gradient(to bottom, #00ACB1, #9FF0D7) !important;
+    }
+
+    thead th,
+    .thead-teal th {
+        color: #fff !important;
+        background-color: #00ACB1 !important;
+    }
+
+    /* Preserve the important colorful Grade/Intervention cells */
+    [style*="background: var(--bg-7)"],
+    [style*="background: #dcedc8"],
+    [style*="background: var(--bg-8)"],
+    [style*="background: #ffcdd2"],
+    [style*="background: var(--bg-9)"],
+    [style*="background: #bbdefb"],
+    [style*="background: var(--bg-10)"],
+    [style*="background: #fff9c4"],
+    [style*="background: var(--bg-11)"],
+    [style*="background: #e1bee7"],
+    [style*="background: var(--bg-12)"],
+    [style*="background: #f8bbd0"],
+    [style*="background: var(--bg-staff)"],
+    [style*="background: #e0e0e0"],
+    [style*="background: var(--bg-others)"],
+    [style*="background: #f5f5f5"],
+    [style*="background: #00ACB1"] {
+        color: inherit !important;
+        /* Keep black text generally, or white if forced */
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    /* Specific fix for white text on teal summary rows */
+    [style*="color: white"],
+    [style*="color: #fff"] {
+        color: #fff !important;
+    }
+
+    /* Hide UI noise */
+    header,
+    footer,
+    .sidebar,
+    nav,
+    .no-print,
+    .btn,
+    .controls,
+    .pagination,
+    .dark-mode-toggle,
+    .header-shape {
+        display: none !important;
+    }
+
+    /* Container Reset */
+    #main,
+    .container,
+    .table-container,
+    .census-container,
+    .report-container,
+    .panel,
+    .ailments-container {
+        background: #fff !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+/* Modal List Styles */
+body.dark-mode .modal-content {
+    background: white !important;
+    color: #333 !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .detail-item {
+    border-bottom: 1px solid #eee !important;
+}
+
+body.dark-mode .atag,
+body.dark-mode .complaint-tag {
+    background: #f0f2f5 !important;
+    color: #333 !important;
+    border: 1px solid #eee !important;
+    box-shadow: none !important;
+}

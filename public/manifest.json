@@ -1,0 +1,22 @@
+{
+  "name": "OCNHS Clinic System",
+  "short_name": "ClinicApp",
+  "description": "OCNHS School Clinic Management System",
+  "start_url": "index.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00ACB1",
+  "icons": [
+    {
+      "src": "assets/img/ocnhs_logo.png",
+      "sizes": "192x192 any",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/ocnhs_logo.png",
+      "sizes": "512x512 any",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

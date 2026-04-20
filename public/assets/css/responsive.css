@@ -1,0 +1,733 @@
+/* =========================
+   RESPONSIVE DESIGN - OPTIMIZED
+========================= */
+
+/* Large Desktop - Optimal viewing */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop - Standard */
+@media screen and (max-width: 1200px) {
+    .controls {
+        padding: 15px 30px;
+    }
+
+    .table-container {
+        padding: 0 30px;
+    }
+}
+
+/* Tablet Landscape - Compact */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .header-shape {
+        width: 250px;
+        height: 70px;
+    }
+
+    nav {
+        padding: 14px 20px;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    .controls {
+        padding: 20px;
+    }
+
+    .search-box {
+        max-width: 300px;
+    }
+
+    .table-container {
+        padding: 0 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px 8px;
+    }
+
+    .modal-form input,
+    .modal-form select {
+        font-size: 14px;
+    }
+
+    .actions button,
+    .actions a {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Tablet Portrait - Mobile Transition */
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        align-items: center;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .logo img {
+        height: 50px;
+        /* Slightly smaller for mobile row */
+        padding: 5px;
+    }
+
+    .header-shape {
+        display: none;
+    }
+
+    .user-dropdown {
+        order: unset;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .user-info {
+        font-size: 14px;
+    }
+
+    /* Navigation */
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    nav a span {
+        white-space: nowrap;
+    }
+
+    /* Controls - Stack items vertically and full width */
+    .controls {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        align-items: stretch;
+        /* Ensure items stretch */
+    }
+
+    .controls>* {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        max-width: none !important;
+    }
+
+    .filter-select {
+        width: 100% !important;
+        max-width: none !important;
+        border-radius: 25px !important;
+    }
+
+    /* Ensure search box is always a row and matches index.php style */
+    .search-box {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: none !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .searchbtn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .search-box input {
+        flex: 1 !important;
+        min-width: 0 !important;
+        padding: 10px 0 !important;
+    }
+
+    .search-icon {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-shrink: 0 !important;
+        margin-left: 10px;
+    }
+
+    /* Except search box, flexible is fine, but width 100% is enforced above */
+
+    /* Ensure flex containers inside controls (like dropdowns) justify content */
+    .controls>div {
+        display: flex;
+        justify-content: center;
+        /* Center content of divs */
+    }
+
+    /* Specific fix for the dropdown div in logs.php */
+    .controls>div:has(select) {
+        justify-content: space-between;
+        /* Or stretch?? No, center or stretch */
+    }
+
+    /* Ensure buttons inside controls are also full width/centered */
+    .controls button,
+    .controls .dropdown,
+    .controls .dropdown-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Table */
+    .table-container {
+        overflow-x: auto;
+        padding: 0 15px;
+    }
+
+    table {
+        min-width: 800px;
+        font-size: 13px;
+    }
+
+    /* Modal */
+    .modal-card,
+    #editStudentForm {
+        width: 95%;
+        padding: 20px;
+        max-height: 85vh;
+    }
+
+    .close-btn {
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+    }
+
+    /* Records */
+    .record-card-container {
+        flex-direction: column;
+    }
+
+    .record-card {
+        min-width: 100%;
+    }
+
+    /* Login/Register */
+    .scene {
+        padding: 15px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .panel {
+        padding: 30px 25px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
+    }
+
+    .field input {
+        padding: 10px 38px 10px 10px;
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+        right: 0;
+        left: auto;
+        min-width: 150px;
+    }
+
+    /* Hide tooltips on mobile */
+    .actions [data-tooltip]::after,
+    .actions [data-tooltip]::before {
+        display: none;
+    }
+
+    /* Badges */
+    .status-badge,
+    .role-badge {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .status-dot {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+/* Mobile Landscape - Refined */
+@media screen and (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Navigation adjustment */
+    nav a {
+        transform: skew(40deg);
+    }
+
+    nav a span {
+        transform: skew(-40deg);
+    }
+
+    /* Search */
+    .search-box {
+        padding: 0 12px;
+    }
+
+    .search-box input {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+
+    /* Table */
+    th,
+    td {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+
+    /* Modal */
+    .modal-card,
+    #editStudentForm {
+        width: 100%;
+        margin: 10px;
+    }
+
+    /* Record cards */
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .btn-action {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+}
+
+/* Mobile Portrait - Full Mobile */
+@media screen and (max-width: 480px) {
+
+    /* Global touch optimization */
+    * {
+        -webkit-tap-highlight-color: rgba(0, 172, 177, 0.2);
+    }
+
+    /* Header */
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .user-info {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .user-info i:first-child {
+        font-size: 20px;
+    }
+
+    .user-dropdown .dropdown-menu {
+        right: 0;
+        left: auto;
+        min-width: 180px;
+    }
+
+    /* Navigation */
+    nav {
+        padding: 8px 10px;
+        gap: 6px;
+        justify-content: center;
+    }
+
+    nav a {
+        flex: 1 1 auto;
+        min-width: fit-content;
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+
+    /* Controls */
+    .controls {
+        padding: 10px;
+    }
+
+    .controls>div:last-child:not(.search-box) {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .show-all-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .search-box,
+    .filter-select {
+        width: 100%;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 13px;
+        letter-spacing: 0.3px;
+    }
+
+    .btn.green,
+    .btn.red {
+        justify-content: center;
+    }
+
+    .dropdown,
+    .btn.green {
+        width: 100%;
+    }
+
+    .dropdown-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+
+    /* Forms */
+    .modal-form {
+        margin-right: 0;
+    }
+
+    .modal-actions {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+
+    /* Login/Register */
+    .panel.form {
+        padding: 25px 20px;
+    }
+
+    .panel.brand {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .brand-mark img {
+        height: 100px;
+    }
+
+    /* Table */
+    .table-container {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th,
+    td {
+        padding: 8px 4px;
+        white-space: nowrap;
+    }
+
+    /* Actions */
+    .actions {
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .action-dropdown {
+        width: 100%;
+    }
+
+    .action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .action-menu {
+        right: 0;
+        left: 0;
+        top: auto;
+        bottom: calc(100% + 5px);
+        transform: none;
+        width: 100%;
+    }
+
+    /* Modal */
+    .modal-card.view-modal {
+        width: 100%;
+    }
+
+    .modal-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .record-card {
+        min-height: 200px;
+        padding: 20px 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .modal-card-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-action {
+        width: 100%;
+        justify-content: center;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile - Minimal */
+@media screen and (max-width: 360px) {
+
+    /* Header */
+    .logo img {
+        height: 40px;
+        padding: 3px;
+    }
+
+    .user-info span {
+        display: none;
+    }
+
+    .user-info i:first-child {
+        font-size: 18px;
+    }
+
+    /* Navigation */
+    nav {
+        padding: 6px 8px;
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+
+    /* Controls */
+    .controls {
+        padding: 8px;
+        gap: 10px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* Search */
+    .search-box input {
+        font-size: 12px;
+    }
+
+    /* Login */
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .brand-mark img {
+        height: 80px;
+    }
+
+    /* Table */
+    th,
+    td {
+        font-size: 10px;
+        padding: 6px 3px;
+    }
+
+    /* Modal */
+    .modal-card {
+        padding: 15px;
+    }
+
+    .modal-form label {
+        font-size: 12px;
+    }
+
+    .modal-form input,
+    .modal-form select {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+/* Landscape Orientation - Height Constrained */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+
+    .modal-card,
+    #editStudentForm {
+        max-height: 95vh;
+        overflow-y: auto;
+    }
+
+    .panel {
+        padding: 20px;
+    }
+
+    header {
+        padding: 5px 15px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    nav {
+        padding: 8px 15px;
+    }
+}
+
+/* Touch Devices - Better Touch Experience */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Increase touch targets */
+    button,
+    a,
+    input,
+    select {
+        min-height: 44px;
+    }
+
+    .action-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    /* Remove hover transforms on touch */
+    .btn:hover,
+    .action-btn:hover {
+        transform: none;
+    }
+
+    /* Larger nav tap areas */
+    nav a {
+        padding: 10px 15px;
+    }
+}
+
+/* High DPI Displays - Crisp Images */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    .logo img,
+    .brand-mark img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Print Optimization */
+@media print {
+
+    header,
+    nav,
+    .controls,
+    .btn,
+    .action-dropdown,
+    .modal-overlay {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+    }
+
+    .table-container {
+        padding: 0;
+        overflow: visible;
+    }
+
+    table {
+        page-break-inside: auto;
+        width: 100%;
+        border: 1px solid #000;
+    }
+
+    tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    th,
+    td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+}
